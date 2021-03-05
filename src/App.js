@@ -5,14 +5,14 @@ import Resume from "./pages/Resume";
 import NavBar from "./components/nav/Navbar";
 import Footer from "./components/footer/Footer";
 import "./styles/styles.scss";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <Router>
       <NavBar />
       <Switch>
-        <Route exact path="/React">
+        <Route exact path="/">
           <Home />
         </Route>
         <Route path="/projects">
