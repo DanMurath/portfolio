@@ -55,13 +55,56 @@
           grid-gap: 8px;
           i {
             font-size: 33px;
+          }
+          .js {
             &:hover,
             &:active {
-              background: linear-gradient(to right, #f79d00, #64f38c);
+              background: #f2e204;
               background-clip: text;
               color: transparent;
             }
           }
+          .html {
+            &:hover,
+            &:active {
+              background: #f26b04;
+              background-clip: text;
+              color: transparent;
+            }
+          }
+          .css {
+            &:hover,
+            &:active {
+              background: #54c4dd;
+              background-clip: text;
+              color: transparent;
+            }
+          }
+          .sass {
+            &:hover,
+            &:active {
+              background: #ed34bb;
+              background-clip: text;
+              color: transparent;
+            }
+          }
+          .react {
+            &:hover,
+            &:active {
+              background: #00e5f9;
+              background-clip: text;
+              color: transparent;
+            }
+          }
+          .git {
+            &:hover,
+            &:active {
+              background: #f94f00;
+              background-clip: text;
+              color: transparent;
+            }
+          }
+
           p {
             font-size: 13px;
             padding-top: 5px;

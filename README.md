@@ -1,6 +1,8 @@
 # Portfolio
 
-This project was made with React. I designed this Portfolio specifically to be consice and straight to the point, all while being aesthetically pleasing.
+You can visit the site [1]:https://danmurath.github.io/portfolio/#/ "here".
+
+This project was made with React. I designed this Portfolio specifically to be consice and straight to the point, all while being aesthetically pleasing. This site is completely responsive.
 
 ### React Router
 
