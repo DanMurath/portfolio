@@ -64,3 +64,31 @@
     }
   }
 }
+@media (max-height: 632px) {
+  .resume {
+    .resume-body {
+      .container {
+        width: 90%;
+        .sub-container {
+          p {
+            font-size: 11px;
+          }
+          .titles {
+            transform: translateY(0.3rem);
+            position: relative;
+          }
+          .descriptions {
+            .ta {
+              padding-left: 7px;
+              .stack .technologies {
+                p {
+                  font-size: 11px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

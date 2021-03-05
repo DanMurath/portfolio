@@ -98,13 +98,21 @@
     }
   }
 }
-/*
-@media (min-width: 460px) {
-  .portfolio {
-    .portfolio-body {
+
+@media (max-height: 632px) {
+  .home {
+    .projects-body {
+      height: 110vh;
       .container {
-        padding: 3rem 7rem;
+        .p-content {
+          .p-tile {
+            height: 110px;
+            .project-bod {
+              height: 90px;
+            }
+          }
+        }
       }
     }
   }
-}*/
+}

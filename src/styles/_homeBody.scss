@@ -131,3 +131,28 @@
     }
   }
 }
+@media (max-height: 632px) {
+  .home {
+    .home-body {
+      .container {
+        .sub-container {
+          padding: 0.9rem;
+          .about {
+            span {
+              padding-bottom: 0.4rem;
+              font-size: 17px;
+            }
+            p {
+              font-size: 11px;
+            }
+          }
+          .stack {
+            p {
+              font-size: 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
