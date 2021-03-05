@@ -1,0 +1,110 @@
+.home {
+  .projects-body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    .container {
+      padding: 4rem 2rem 2rem 2rem;
+      width: 80%;
+      .p-content {
+        .p-tile {
+          height: 150px;
+          text-align: center;
+          .tile-title {
+            background-color: $star-colour;
+            padding: 8px 0;
+            border-radius: 10px 10px 0 0;
+            margin-top: 2rem;
+          }
+          .project-bod {
+            display: flex;
+            height: 115px;
+            align-items: center;
+            justify-content: center;
+            object-fit: cover;
+            background-position: center;
+            background-size: 100%;
+            border-radius: 0 0 10px 10px;
+            .background {
+              background-color: $star-colour;
+              padding: 6px 5px;
+              margin: 5px;
+              border-radius: 10px;
+              a {
+                text-decoration: none;
+                i {
+                  padding: 0 5px;
+                }
+                &:hover,
+                &:active {
+                  i {
+                    background: linear-gradient(to right, #00d2ff, #928dab);
+                    color: transparent;
+                    background-clip: text;
+                  }
+                }
+              }
+            }
+          }
+          .one {
+            background: url("/img/project1.png");
+            object-fit: cover;
+            background-position: center;
+            background-size: 100%;
+          }
+          .two {
+            background: url("/img/project2.png");
+            object-fit: cover;
+            background-position: center;
+            background-size: 100%;
+          }
+          .three {
+            background: url("/img/project3.png");
+            object-fit: cover;
+            background-position: center;
+            background-size: 100%;
+            .background {
+              margin-left: -10px;
+              a {
+                margin: 0;
+                // margin-left: -26px;
+              }
+              .fas {
+                display: none;
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 863px) {
+  .home {
+    .projects-body {
+      .container {
+        width: 500px;
+        padding-top: 8rem;
+        .p-content {
+          .p-tile {
+            height: 200px;
+            .project-bod {
+              height: 170px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*
+@media (min-width: 460px) {
+  .portfolio {
+    .portfolio-body {
+      .container {
+        padding: 3rem 7rem;
+      }
+    }
+  }
+}*/

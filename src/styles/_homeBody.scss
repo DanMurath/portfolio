@@ -1,0 +1,90 @@
+.home {
+  height: 100vh;
+  background-image: url("/img/bckgrnd.jpg");
+  background-position: center;
+  object-fit: cover;
+  //  background: linear-gradient(to right, #00d2ff, #928dab);
+  .home-body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .container {
+      width: 80%;
+      border-radius: 16px;
+      background-color: #141414;
+      display: flex;
+      justify-content: center;
+      .sub-container {
+        padding: 2rem;
+        text-align: center;
+        .about {
+          span {
+            letter-spacing: 1px;
+            font-size: 19px;
+            background: linear-gradient(to right, #00d2ff, #928dab);
+            color: transparent;
+            background-clip: text;
+            display: block;
+            padding-bottom: 1.5rem;
+          }
+          p {
+            font-size: 13px;
+            text-align: left;
+          }
+        }
+        .fas {
+          font-size: 29px;
+          padding-bottom: 1rem;
+          &:hover,
+          &:active {
+            background: linear-gradient(to right, #00d2ff, #928dab);
+            color: transparent;
+            background-clip: text;
+          }
+        }
+        h3 {
+          padding-bottom: 1.5rem;
+          font-weight: 400;
+          font-size: 20px;
+        }
+        .stack {
+          display: grid;
+          justify-content: center;
+          grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+          grid-gap: 8px;
+          i {
+            font-size: 33px;
+            &:hover,
+            &:active {
+              background: linear-gradient(to right, #f79d00, #64f38c);
+              background-clip: text;
+              color: transparent;
+            }
+          }
+          p {
+            font-size: 13px;
+            padding-top: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 838px) {
+  .home {
+    .home-body {
+      .container {
+        width: 500px;
+        padding: 0 3rem;
+        .sub-container {
+          .about {
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

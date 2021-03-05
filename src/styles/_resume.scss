@@ -1,0 +1,66 @@
+.resume {
+  .resume-body {
+    .container {
+      display: inline-block;
+      width: 86%;
+      height: 340px;
+      .sub-container {
+        text-align: left;
+        padding: 2.6rem 0px 0 0px;
+        //height: 100%;
+        p {
+          font-size: 13px;
+        }
+        .titles {
+          width: 42%;
+          height: 100%;
+          display: inline-block;
+          text-align: right;
+          padding-right: 4px;
+          position: relative;
+          top: -2.17rem;
+          display: inline-block;
+          .ta {
+            height: 6.7rem;
+          }
+          i {
+            font-size: 16px;
+            padding-right: 3px;
+          }
+        }
+        .descriptions {
+          width: 58%;
+          display: inline-block;
+          height: 100%;
+          .ta {
+            height: 6.7rem;
+            padding-left: 19px;
+          }
+          .education {
+            height: 6.73rem;
+          }
+          .technologies {
+            grid-gap: 0;
+            p {
+              padding-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 836px) {
+  .resume {
+    .resume-body {
+      .container {
+        width: 500px;
+        .sub-container {
+          .titles {
+            top: -2.09rem;
+          }
+        }
+      }
+    }
+  }
+}
