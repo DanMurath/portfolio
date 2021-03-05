@@ -12,7 +12,7 @@ function App() {
     <Router>
       <NavBar />
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/React">
           <Home />
         </Route>
         <Route path="/projects">
