@@ -19,6 +19,11 @@
       background-clip: text;
     }
   }
+  .navbar-logo {
+    i {
+      color: $star-colour;
+    }
+  }
   .socials {
     i {
       font-size: 15px;
@@ -96,10 +101,17 @@
     }
   }
 }
-@media (max-height: 668px) {
+@media (max-height: 635px) {
   .nav {
     .nav-menu {
-      height: 80.5vh;
+      height: 79vh;
+    }
+  }
+}
+@media (min-width: 660px) {
+  .nav {
+    .nav-menu {
+      height: 90vh;
     }
   }
 }
