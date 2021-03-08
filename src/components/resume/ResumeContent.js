@@ -1,44 +1,48 @@
+import { useContext } from "react";
+import Context from "../../context";
+
 const ResumeContent = () => {
+  const { textContent } = useContext(Context);
+
   return (
     <div className="container">
       <div className="sub-container">
         <div className="titles">
           <div className="education ta">
             <p>
-              <i className="fas fa-graduation-cap"></i>Education:
+              <i className="fas fa-graduation-cap"></i>
+              {textContent.resume.education.title}
             </p>
           </div>
           <div className="technologies ta">
             <p>
-              <i className="fas fa-code"></i>Technologies:
+              <i className="fas fa-code"></i>
+              {textContent.resume.technologies.title}
             </p>
           </div>
           <div className="languages ta">
             <p>
-              <i className="fas fa-comment-dots"></i>Languages:
+              <i className="fas fa-comment-dots"></i>
+              {textContent.resume.languages.title}
             </p>
           </div>
         </div>
         <div className="descriptions">
           <div className="education ta">
-            <p>St. David's Sixth Form</p>
-            <p>BBB [2018 - 2020]</p>
-            <p>St. Illtyd's High School</p>
-            <p>AAAABBB [2013 - 2018]</p>
+            <p>{textContent.resume.education.schoolOne}</p>
+            <p>{textContent.resume.education.gradesOne}</p>
+            <p>{textContent.resume.education.schoolTwo}</p>
+            <p>{textContent.resume.education.gradesTwo}</p>
           </div>
           <div className="stack technologies ta">
-            <p>JavaScript</p>
-            <p>React</p>
-            <p>HTML5</p>
-            <p>CSS3</p>
-            <p>SCSS(Sass)</p>
-            <p>Materialize</p>
-            <p>Git</p>
+            {textContent.resume.technologies.techList.map((item, index) => (
+              <p key={index}>{item}</p>
+            ))}
           </div>
           <div className="languages ta">
-            <p>English</p>
-            <p>Italian</p>
-            <p>Bosnian</p>
+            {textContent.resume.languages.langList.map((item, index) => (
+              <p key={index}>{item}</p>
+            ))}
           </div>
         </div>
       </div>

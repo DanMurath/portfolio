@@ -1,12 +1,15 @@
+import { useContext } from "react";
+import Context from "../../context";
+
 const HomeBody = () => {
+  const { textContent } = useContext(Context);
+
   return (
     <div className="home-body">
       <div className="container">
         <div className="sub-container">
           <i className="fas fa-laptop"></i>
-          <h3>
-            Hello. My name is Daniel Murathodzic, and I'm an aspiring developer.
-          </h3>
+          <h3>{textContent.home.intro}</h3>
           <div className="stack">
             <div className="js adjust">
               <i className="fab fa-js-square js"></i>

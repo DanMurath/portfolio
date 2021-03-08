@@ -2,30 +2,54 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
+
 import NavBar from "./components/nav/Navbar";
 import Footer from "./components/footer/Footer";
 import "./styles/styles.scss";
+import GA from "./utils/Analytics";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
+import englishText from "./data/englishText";
+import italianText from "./data/italianText";
+
+import Context from "./context";
+import { useState } from "react";
+
 function App() {
+  const DEFAULT_TEXT_CONTENT = englishText;
+  const DEFAULT_LANGUAGE_TOGGLE = false;
+
+  const [textContent, setTextContent] = useState(DEFAULT_TEXT_CONTENT);
+  const [languageToggle, setLanguageToggle] = useState(DEFAULT_LANGUAGE_TOGGLE);
+
+  const handleSwitch = () => {
+    languageToggle === false
+      ? setTextContent(italianText)
+      : setTextContent(englishText);
+    setLanguageToggle(!languageToggle);
+  };
+
   return (
     <Router>
-      <NavBar />
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/projects">
-          <Projects />
-        </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/resume">
-          <Resume />
-        </Route>
-      </Switch>
-      <Footer />
+      {GA.init() && <GA.RouteTracker />}
+      <Context.Provider value={{ textContent, handleSwitch }}>
+        <NavBar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/resume">
+            <Resume />
+          </Route>
+        </Switch>
+        <Footer />
+      </Context.Provider>
     </Router>
   );
 }

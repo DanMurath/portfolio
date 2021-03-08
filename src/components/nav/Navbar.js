@@ -1,4 +1,4 @@
-//import LanguageToggle from "./LanguageToggle";
+import LanguageToggle from "./LanguageToggle";
 //import NavOptions from "./NavOptions";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -13,9 +13,7 @@ const Navbar = () => {
 
   return (
     <div className="nav">
-      <h1 className="navbar-logo">
-        <i className="fab fa-react"></i>
-      </h1>
+      <LanguageToggle />
       <div className="menu-icon" onClick={handleClick}>
         <i className={state ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
