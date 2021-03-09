@@ -49,6 +49,7 @@
     text-align: center;
     justify-content: end;
     align-items: center;
+    z-index: -1;
   }
   .menu-icon {
     display: none;
@@ -61,24 +62,33 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 91.5vh;
-      top: 55px;
+      //     margin-top: ;
+      height: 100vh;
+      top: 0;
       position: absolute;
       left: -100%;
       opacity: 0.95;
       transition: all 0.5s ease;
+      z-index: -1;
       li {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 30%;
+        height: 26%;
+        z-index: -1;
+      }
+      .nav-margin-top {
+        margin-top: 20%;
+      }
+      .nav-margin-bottom {
+        margin-bottom: 20%;
       }
     }
     .active {
       left: 0;
       background-color: $star-colour;
       transition: all 0.5s ease;
-      z-index: 1;
+      z-index: -1;
     }
 
     .menu-icon {
@@ -93,20 +103,6 @@
           color: $bench-colour;
         }
       }
-    }
-  }
-}
-@media (max-height: 635px) {
-  .nav {
-    .nav-menu {
-      height: 79vh;
-    }
-  }
-}
-@media (max-height: 660px) {
-  .nav {
-    .nav-menu {
-      height: 90vh;
     }
   }
 }

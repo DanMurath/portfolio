@@ -12,16 +12,17 @@ const italianText = {
   },
   about: {
     title: "Su di me:",
-    description: `Ho 19 anni e sono nato a Cardiff, e ho avuto l'opportunità di creare e costruire. In tutta la mia vita, ho sempre avuto la sensazione di costruire idee e di volerle forgiare in realtà. Durante la pandemia, ho scoperto questa maestria in quello che chiamiamo sviluppo software. Questi strumenti in quelli che chiamiamo linguaggi che usiamo per forgiare quello che vogliamo. Mai in vita mia sono stato affascinato da un simile concetto, e quindi ho iniziato la mia passione per esso. Un'altra mia passione è lo sport. Sono un atleta che ha gareggiato per il Galles in diverse occasioni prima della pandemia. Non gioco più molto ai videogiochi, ma probabilmente potrei ancora batterti in qualsiasi gioco. Mi interessano anche lo spazio, la psicologia, le neuroscienze, la musica ... l'elenco potrebbe continuare.`,
+    description: `Ho 19 anni e sono nato a Cardiff, e ho avuto l'opportunità di creare e costruire. In tutta la mia vita, ho sempre avuto la sensazione di costruire idee e di volerle forgiare in realtà. Durante la pandemia, ho scoperto questa maestria in quello che chiamiamo sviluppo software. Questi strumenti in quelli che chiamiamo linguaggi che usiamo per produrre quello che vogliamo. Mai in vita mia sono stato affascinato da un simile concetto, e quindi ho iniziato la mia passione per esso. Un'altra mia passione è lo sport. Sono un atleta che ha gareggiato per il Galles in diverse occasioni prima della pandemia. Non gioco più molto ai videogiochi, ma probabilmente potrei ancora batterti in qualsiasi gioco. Mi interessano anche lo spazio, la psicologia, le neuroscienze, la musica ... l'elenco potrebbe continuare. Se sei arrivato fin qui, grazie mille. Mandami una mail (in basso a destra), mi piacerebbe parlare!`,
   },
-  projects: [
-    { key: "xbox", title: "Xbox Riproduzione" },
-    { key: "react", title: "React Blog" },
-    { key: "portfolio", title: "Questo Sito" },
-  ],
+  projects: {
+    xbox: "Xbox Riproduzione",
+    react: "React Blog",
+    site: "Questo Sito",
+  },
   projectButtons: {
     live: "Dal Vivo",
     code: "Codice",
+    demo: "Dimostrativo",
   },
   resume: {
     education: {

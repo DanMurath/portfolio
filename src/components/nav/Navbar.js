@@ -1,11 +1,11 @@
 import LanguageToggle from "./LanguageToggle";
-//import NavOptions from "./NavOptions";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import Context from "../../context";
 import { Link } from "react-router-dom";
-import { MenuItems } from "./MenuItems";
 
 const Navbar = () => {
   const [state, setState] = useState(false);
+  const { textContent } = useContext(Context);
 
   const handleClick = () => {
     state === false ? setState(true) : setState(false);
@@ -18,15 +18,21 @@ const Navbar = () => {
         <i className={state ? "fas fa-times" : "fas fa-bars"}></i>
       </div>
       <ul className={state ? "nav-menu active" : "nav-menu"}>
-        {MenuItems.map((item, index) => {
-          return (
-            <li key={index}>
-              <Link className={item.cName} to={item.url} onClick={handleClick}>
-                {item.title}
-              </Link>
-            </li>
-          );
-        })}
+        <li className="nav-margin-top">
+          <Link className="nav-links" to="/" onClick={handleClick}>
+            {textContent.nav.home}
+          </Link>
+        </li>
+        <li>
+          <Link className="nav-links" to="/projects" onClick={handleClick}>
+            {textContent.nav.projects}
+          </Link>
+        </li>
+        <li className="nav-margin-bottom">
+          <Link className="nav-links" to="/about" onClick={handleClick}>
+            {textContent.nav.about}
+          </Link>
+        </li>
       </ul>
     </div>
   );
