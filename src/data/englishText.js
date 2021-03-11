@@ -18,7 +18,7 @@ const englishText = {
     xbox: "Xbox Clone",
     xboxExplained: `A re-creation of Microsoft's site. I was drawn in by the architecture and UI of their application and gave myself the challenge to replicate it. This project was done to improve my front-end skills and to show I can build from designs. Created with HTML, Sass, Materialize, JavaScript and jQuery.`,
     crypto: "Crypto Tracker",
-    cryptoExplained: `An Application that shows cryptocurrency stats in real time. I used axios to fetch data from an api and display content with a clean UI. I also created a search bar for anyone to narrow down to a specific crypto. Built with React, React Hooks and Sass.`,
+    cryptoExplained: `An Application that shows cryptocurrency stats in real time. I used axios to fetch data from an api and displayed content with a clean UI. I also created a search bar for anyone to narrow down to a specific crypto. Built with React, React Hooks and Sass.`,
     site: "This Site",
   },
   projectButtons: {
