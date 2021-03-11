@@ -59,7 +59,7 @@ const PortfolioContent = () => {
           </div>
           <div className="background">
             <a
-              href="https://github.com/DanMurath/react-blog"
+              href="https://github.com/DanMurath/crypto-tracker"
               target="_blank"
               rel="noreferrer"
             >
