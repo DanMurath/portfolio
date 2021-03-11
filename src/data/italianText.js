@@ -16,7 +16,9 @@ const italianText = {
   },
   projects: {
     xbox: "Xbox Riproduzione",
-    react: "React Blog",
+    xboxExplained: `Una ri-creazione del sito di Microsoft. Sono stato attratto dall'architettura e dall'interfaccia utente della loro applicazione e mi sono dato la sfida di replicarle. Questo progetto mi ha aiutato a capire moltissimo a fronte finisce. Creato con JavaScript, Sass e Materialise.`,
+    crypto: "Criptovaluta Tracciato",
+    cryptoExplained: `Un'applicazione che mostra le statistiche delle criptovalute in tempo reale. Ho recuperato i dati da un'API con axios. Includi una barra di ricerca per restringere il campo a una crittografia specifica. Costruito con React e Sass.`,
     site: "Questo Sito",
   },
   projectButtons: {

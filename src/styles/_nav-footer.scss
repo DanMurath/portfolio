@@ -1,7 +1,7 @@
 .nav,
 .footer {
   width: 100%;
-  background-color: #141414;
+  background-color: transparent;
   padding: 1.2rem 2rem;
   color: #fff;
   display: flex;
@@ -62,7 +62,6 @@
       display: flex;
       flex-direction: column;
       width: 100%;
-      //     margin-top: ;
       height: 100vh;
       top: 0;
       position: absolute;
@@ -100,7 +99,9 @@
       i {
         &:hover,
         &:active {
-          color: $bench-colour;
+          background: linear-gradient(to right, #00d2ff, #928dab);
+          background-clip: text;
+          color: transparent;
         }
       }
     }

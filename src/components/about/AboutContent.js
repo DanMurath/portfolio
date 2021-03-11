@@ -6,8 +6,8 @@ const AboutContent = () => {
 
   return (
     <div className="home-body">
-      <div className="container">
-        <div className="sub-container">
+      <div className="container about-container">
+        <div className="sub-container about-sub-container">
           <div className="about">
             <span>{textContent.about.title}</span>
             <p>{textContent.about.description}</p>
