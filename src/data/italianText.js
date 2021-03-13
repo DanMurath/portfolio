@@ -1,14 +1,15 @@
 const italianText = {
   nav: {
-    home: "CASA",
     projects: "PROGETTI",
-    about: "SU DI ME",
+    skills: "COMPETENZE",
+    contact: "CONTATTO",
   },
   footer: {
     resume: "Sommario",
   },
   home: {
     intro: `Ciao. Mi chiamo Daniele Murathodzic, e sono un aspirante sviluppatore.`,
+    work: `Guarda il mio lavoro`,
   },
   about: {
     title: "Su di me:",
@@ -26,30 +27,11 @@ const italianText = {
     code: "Codice",
     demo: "Dimostrativo",
   },
-  resume: {
-    education: {
-      title: "Scuola:",
-      schoolOne: `St. David's Sesta Forma`,
-      gradesOne: "BBB [2018 - 2020]",
-      schoolTwo: `St. Illtyd's Scuola Superiore`,
-      gradesTwo: "A*AABBBB [2013 - 2018]",
-    },
-    technologies: {
-      title: "Tecnologie:",
-      techList: [
-        "JavaScript",
-        "React",
-        "HTML5",
-        "CSS3",
-        "SCSS(Sass)",
-        "Materialize",
-        "Git",
-      ],
-    },
-    languages: {
-      title: "Le Lingue:",
-      langList: ["Italiano (Nativo)", "Bosniaco (Nativo)", "Sloveno (Di base)"],
-    },
+  skills: {
+    core: "Tecnologie di base",
+    tools: "Utensili",
+    lib: "Biblioteche",
+    fra: "Quadri",
   },
 };
 

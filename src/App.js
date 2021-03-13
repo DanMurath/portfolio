@@ -2,6 +2,8 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
+import Skills from "./pages/Skills";
+import Contact from "./pages/Contact";
 
 import NavBar from "./components/nav/Navbar";
 import Footer from "./components/footer/Footer";
@@ -41,11 +43,11 @@ function App() {
           <Route path="/projects">
             <Projects />
           </Route>
-          <Route path="/about">
-            <About />
+          <Route path="/skills">
+            <Skills />
           </Route>
-          <Route path="/resume">
-            <Resume />
+          <Route path="/contact">
+            <Contact />
           </Route>
         </Switch>
         <Footer />
